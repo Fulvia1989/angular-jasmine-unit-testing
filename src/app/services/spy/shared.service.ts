@@ -6,10 +6,10 @@ import { Injectable } from '@angular/core';
 export class SharedService {
 
   constructor() {
-    console.log("the shared service has been instanciated")
+    console.log("Instance of sharedService has been created")
    }
 
   logFunction(){
-    console.log('My shared function has been called')
+    console.log('My shared logFunction has been called')
   }
 }

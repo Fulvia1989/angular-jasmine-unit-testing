@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { SharedService } from './shared.service';
+import { SharedService } from '../spy/shared.service';
 
 @Injectable({
   providedIn: 'root'
