@@ -1,4 +1,4 @@
-import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
+import { ComponentFixture, fakeAsync, flush, TestBed, tick, waitForAsync } from '@angular/core/testing';
 import { FooterComponent } from './footer.component';
 import { DebugElement } from '@angular/core';
 import { By } from '@angular/platform-browser';
@@ -29,15 +29,18 @@ describe('FooterComponent', () => {
         expect(btn[0].nativeElement.textContent).toBe('Subscribe');
         expect(btn[0].nativeElement.disabled).toBeFalse();
     });
-    it('should render a button with text subscribed and button should be disabled after click', () => {
+    it('should render a button with text subscribed and button should be disabled after click', fakeAsync(()=>{
         const btn = el.queryAll(By.css('button'));
         component.isSubscribed=false;
         component.bntText='Subscribe';
         btn[0].nativeElement.click();
+        //tick(2000);
+        flush();
         fixture.detectChanges();
         expect(btn[0].nativeElement.textContent).toBe('Subscribed');
         expect(btn[0].nativeElement.disabled).toBeTrue();
-    });
+       
+    }));
 
 
 

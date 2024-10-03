@@ -10,7 +10,10 @@ export class FooterComponent {
   isSubscribed = false;
 
   subscribe(){
-    this.isSubscribed = true;
-    this.bntText = "Subscribed"
+    setTimeout(()=>{
+      this.bntText = "Subscribed"
+      this.isSubscribed = true;
+
+    },2000)
   }
 }
