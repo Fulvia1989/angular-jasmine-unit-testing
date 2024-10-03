@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrl: './footer.component.sass'
 })
 export class FooterComponent {
+  bntText = 'Subscribe';
+  isSubscribed = false;
 
+  subscribe(){
+    this.isSubscribed = true;
+    this.bntText = "Subscribed"
+  }
 }
