@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { DataService } from './services/4-http/data.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'unit-testing';
+  // constructor(private data : DataService){}
+
+  // ngOnInit(){
+  //   this.data.getAllUsers().subscribe(res => console.log(res))
+  // }
 }

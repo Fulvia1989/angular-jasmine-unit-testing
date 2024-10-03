@@ -1,7 +1,7 @@
 import { TestBed } from '@angular/core/testing';
 
 import { CalcService } from './calc.service';
-import { SharedService } from '../spy/shared.service';
+import { SharedService } from '../2-spy/shared.service';
 
 describe('CalcService', () => {
   let calc: CalcService;
@@ -10,7 +10,7 @@ describe('CalcService', () => {
   beforeEach(() => {
     console.log("BeforeEach is called")
     // Instead of manually creating an instance of the services, we can use TEstBed apis that, through Dependency Injection,
-    // declare and inject classes for us:
+    // declare and inject classes (aka manages dependencies) for us:
     // TestBed.configureTestingModule({
     //   providers:[CalcService,SharedService]
     // });
