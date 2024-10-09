@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './4-dom-interaction/footer.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { CounterComponent } from './5-promises/counter/counter.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    FooterComponent
+    FooterComponent,
+    CounterComponent
   ],
   imports: [
     BrowserModule,
