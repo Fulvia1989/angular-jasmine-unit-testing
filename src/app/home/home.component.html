@@ -2,3 +2,8 @@
 <p>home works!</p>
 <button class="btn" disabled>Click</button>
 <img src="http://imgsrc.com/123" alt="image">
+
+<hr>
+@for (item of marks; track $index) {
+    <div appGrade [mark]="item">{{item | grade}}</div>
+}

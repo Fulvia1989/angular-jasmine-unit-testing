@@ -3,6 +3,8 @@ import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 import { HomeComponent } from './home.component';
 import { DebugElement } from '@angular/core';
 import { By } from '@angular/platform-browser';
+import { GradePipe } from '../6-pipes/grade.pipe';
+import { GradeDirective } from '../7-directives/grade.directive';
 
 describe('HomeComponent', () => {
   let component: HomeComponent;
@@ -22,7 +24,7 @@ describe('HomeComponent', () => {
   beforeEach(waitForAsync(
     ()=>{
       TestBed.configureTestingModule({
-        declarations: [HomeComponent]
+        declarations: [HomeComponent,GradePipe,GradeDirective]
       })
       .compileComponents().then(()=>{
         fixture = TestBed.createComponent(HomeComponent);

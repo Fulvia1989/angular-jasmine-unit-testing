@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrl: './home.component.sass'
 })
 export class HomeComponent {
-title='Welcome to Angular Testing'
+title='Welcome to Angular Testing';
+
+marks = [97,68,83,29,75];
 }

@@ -7,13 +7,19 @@ import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './4-dom-interaction/footer.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { CounterComponent } from './5-promises/counter/counter.component';
+import { GradePipe } from './6-pipes/grade.pipe';
+import { GradeDirective } from './7-directives/grade.directive';
+import { InfoComponent } from './8-routing/info.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     FooterComponent,
-    CounterComponent
+    CounterComponent,
+    GradePipe,
+    GradeDirective,
+    InfoComponent
   ],
   imports: [
     BrowserModule,
