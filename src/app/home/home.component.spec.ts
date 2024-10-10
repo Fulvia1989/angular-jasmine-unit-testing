@@ -38,7 +38,7 @@ describe('HomeComponent', () => {
     expect(component).toBeTruthy();
   });
   it('should have contents', () => {
-    let pElements = el.queryAll(By.css('p'));
+    let pElements = el.queryAll(By.css('span'));
     let text = pElements[0].nativeElement.textContent;
     expect(text).toBe('home works!');
     let buttonEls = el.queryAll(By.css('.btn'));

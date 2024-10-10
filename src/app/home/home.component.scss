@@ -1,0 +1,22 @@
+.grades{
+    font-size: 28px;
+    font-weight: 500;
+
+}
+.btn{
+    padding: 0.5rem 1rem;
+    font-size: 20px;
+    border-radius: 3px;
+    margin: 1rem;
+    &:disabled{
+        background-color: lightgray;
+        color: gray;
+        border: 1px solid gray;
+    }
+    .pink{
+        border: 1px solid purple;
+        color: white;
+        background-color: plum;
+    }
+
+}

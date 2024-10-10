@@ -1,0 +1,26 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+
+.btn{
+    padding: 0.5rem 1rem;
+    font-size: 20px;
+    border-radius: 3px;
+    margin: 1rem;
+    cursor: pointer;
+
+    &:disabled{
+        background-color: lightgray;
+        color: gray;
+        border: 1px solid gray;
+    }
+    &.pink{
+        border: 1px solid purple;
+        color: white;
+        background-color: plum;
+    }
+
+}

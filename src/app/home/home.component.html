@@ -1,9 +1,17 @@
 <h1 class="title">{{title}}</h1>
-<p>home works!</p>
-<button class="btn" disabled>Click</button>
-<img src="http://imgsrc.com/123" alt="image">
+<span>home works!</span>
+<button class="btn" disabled>Disabled button</button>
+<div>
+
+    <img src="http://imgsrc.com/123" alt="image">
+</div>
+<div>
+    <a routerLink="/info">Go to Info</a>
+</div>
+
+
 
 <hr>
 @for (item of marks; track $index) {
-    <div appGrade [mark]="item">{{item | grade}}</div>
+    <p class="grades" appGrade [mark]="item">{{item | grade}}</p>
 }

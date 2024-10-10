@@ -30,7 +30,7 @@ describe('GradeDirective', () => {
   });
 
   it('should change the text color on mouseover',()=>{
-    let divs = el.queryAll(By.css('div'));
+    let divs = el.queryAll(By.css('p'));
     let p0 = divs[0];
     let p1 = divs[1];
     let p2 = divs[2];
