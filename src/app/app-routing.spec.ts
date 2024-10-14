@@ -55,7 +55,7 @@ describe("App Routing",()=>{
         infoFixture.detectChanges();
         let links = el.queryAll(By.css('button'));
         links[0].nativeElement.click();
-        homeFixture.whenStable().then(()=>{
+        infoFixture.whenStable().then(()=>{
             expect(location.path()).toBe('/home');
         });
     }))
